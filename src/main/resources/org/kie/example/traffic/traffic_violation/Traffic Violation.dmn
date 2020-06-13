@@ -51,11 +51,11 @@
     <dmn:question>Should the driver be suspended due to points on his driver license?</dmn:question>
     <dmn:allowedAnswers>Yes,No</dmn:allowedAnswers>
     <dmn:variable id="_3C3116D9-2DC5-4AEC-8104-7D4B582157EB" name="Should the driver be suspended?" typeRef="string"/>
-    <dmn:informationRequirement id="_C9823F8C-99D2-4A0E-911D-DB52D3F44DB2">
-      <dmn:requiredInput href="#_E62A4B4C-1155-46FE-ABE4-95390B210939"/>
-    </dmn:informationRequirement>
     <dmn:informationRequirement id="_9E0014C6-33FF-4FC4-B5B7-A69F6F140C7F">
       <dmn:requiredDecision href="#_EBF5EF81-3FFA-4910-98CB-28CC99DCD8D0"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_C9823F8C-99D2-4A0E-911D-DB52D3F44DB2">
+      <dmn:requiredInput href="#_E62A4B4C-1155-46FE-ABE4-95390B210939"/>
     </dmn:informationRequirement>
     <dmn:context id="_BD993DEA-4C79-4ED1-9A95-50A75C7C9003">
       <dmn:contextEntry>
@@ -85,14 +85,14 @@
       </dmn:input>
       <dmn:input id="_913733E6-34D8-462E-83B1-2D329FE94D34">
         <dmn:inputExpression id="_D0E6FFAE-61CA-411C-AE9D-2E5CDF731098" typeRef="number">
-          <dmn:text>Violation.Actual Speed - Violation.Speed Limiten </dmn:text>
+          <dmn:text>Violation.Actual_Speed_Violation.Speed_Limiten </dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_9C1CA4E2-0662-435C-8FCA-500D40714BAC" name="Amount" typeRef="number"/>
       <dmn:output id="_5D221582-4471-42D7-AD02-A58BC35DF13F" name="Points " typeRef="number"/>
       <dmn:rule id="_12B7E48F-F04A-4E85-ABB9-5F65EB1FCDBA">
         <dmn:inputEntry id="_DC4B584B-69C9-495F-95DE-0584541FA211">
-          <dmn:text>speed</dmn:text>
+          <dmn:text>"speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_1971B8D5-F66D-4349-A33C-28916DA14B53">
           <dmn:text>[10..30)</dmn:text>
@@ -106,7 +106,7 @@
       </dmn:rule>
       <dmn:rule id="_276C42D4-433B-4E14-A215-34EC0243D97D">
         <dmn:inputEntry id="_7BE58C97-9790-4240-A69A-9D8FF3BC314E">
-          <dmn:text>speed</dmn:text>
+          <dmn:text>"speed"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_E6931918-A96D-43CD-97C2-6996E23BC4D0">
           <dmn:text>&gt;= 30</dmn:text>
@@ -120,7 +120,7 @@
       </dmn:rule>
       <dmn:rule id="_49642A3B-2B86-4E01-90EE-CD955D1A2DE9">
         <dmn:inputEntry id="_CFB9EF30-D51D-4BC8-B480-87E0B506DE12">
-          <dmn:text>parking</dmn:text>
+          <dmn:text>"parking"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_3083A41B-5597-4012-9423-6F74158B1030">
           <dmn:text>-</dmn:text>
@@ -134,7 +134,7 @@
       </dmn:rule>
       <dmn:rule id="_1E4D66EA-6B15-4A77-8301-A148A66CD905">
         <dmn:inputEntry id="_B095B0D9-B3CE-4E92-95CB-37A5787A52C8">
-          <dmn:text>driving under the influence</dmn:text>
+          <dmn:text>"driving under the influence"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_2E4BB43E-DCE9-495B-B52A-5C1A5828A161">
           <dmn:text>-</dmn:text>
@@ -150,7 +150,7 @@
   </dmn:decision>
   <dmn:inputData id="_C60CCEE4-7CA5-45E4-987D-ED05605E9FED" name="Violation">
     <dmn:extensionElements/>
-    <dmn:variable id="_F429D912-4C71-4AD3-9ECE-649D71192E71" name="Violation" typeRef="tViolation"/>
+    <dmn:variable id="_F429D912-4C71-4AD3-9ECE-649D71192E71" name="Violation"/>
   </dmn:inputData>
   <dmn:inputData id="_E62A4B4C-1155-46FE-ABE4-95390B210939" name="Driver">
     <dmn:extensionElements/>
@@ -217,13 +217,13 @@
         <dc:Bounds x="202" y="191" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_C9823F8C-99D2-4A0E-911D-DB52D3F44DB2" dmnElementRef="_C9823F8C-99D2-4A0E-911D-DB52D3F44DB2">
-        <di:waypoint x="302" y="216"/>
-        <di:waypoint x="368" y="100"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_9E0014C6-33FF-4FC4-B5B7-A69F6F140C7F" dmnElementRef="_9E0014C6-33FF-4FC4-B5B7-A69F6F140C7F">
         <di:waypoint x="418" y="192"/>
         <di:waypoint x="418" y="125"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_C9823F8C-99D2-4A0E-911D-DB52D3F44DB2" dmnElementRef="_C9823F8C-99D2-4A0E-911D-DB52D3F44DB2">
+        <di:waypoint x="302" y="216"/>
+        <di:waypoint x="368" y="100"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_B553E9E9-4483-4EDB-920B-4384E6CAAF88" dmnElementRef="_B553E9E9-4483-4EDB-920B-4384E6CAAF88">
         <di:waypoint x="418" y="287"/>
