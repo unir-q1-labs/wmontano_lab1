@@ -66,7 +66,7 @@
       </dmn:contextEntry>
       <dmn:contextEntry>
         <dmn:literalExpression id="_D8E6E1C7-D704-4133-BCBE-D7CD057FCE47">
-          <dmn:text>if ToPoints >= 20 then "Yes" else "No"</dmn:text>
+          <dmn:text>if 20 >= 20 then "Yes" else "No"</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
