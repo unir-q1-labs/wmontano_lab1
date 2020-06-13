@@ -154,7 +154,7 @@
   </dmn:inputData>
   <dmn:inputData id="_E62A4B4C-1155-46FE-ABE4-95390B210939" name="Driver">
     <dmn:extensionElements/>
-    <dmn:variable id="_E3D26E21-9F5A-42EF-8937-B884EBA7E2A1" name="Driver" typeRef="tDriver"/>
+    <dmn:variable id="_E3D26E21-9F5A-42EF-8937-B884EBA7E2A1" name="Driver"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
