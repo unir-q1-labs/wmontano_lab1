@@ -82,7 +82,7 @@
         <dmn:inputExpression id="_B732C422-2C1C-4F66-A6CF-A42635E9EA33" typeRef="string">
           <dmn:text>Violation.Type</dmn:text>
         </dmn:inputExpression>
-        <dmn:inputValues id="_3297A293-EF94-47C8-8737-E93A48C56038">
+        <dmn:inputValues kie:constraintType="enumeration" id="_3297A293-EF94-47C8-8737-E93A48C56038">
           <dmn:text>"speed","parking","driving under the influence"</dmn:text>
         </dmn:inputValues>
       </dmn:input>
