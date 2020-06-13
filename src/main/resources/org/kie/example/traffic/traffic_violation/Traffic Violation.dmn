@@ -83,7 +83,7 @@
           <dmn:text>Violation.Type</dmn:text>
         </dmn:inputExpression>
         <dmn:inputValues kie:constraintType="enumeration" id="_3297A293-EF94-47C8-8737-E93A48C56038">
-          <dmn:text>"speed","parking","as"</dmn:text>
+          <dmn:text>"speed","parking","driving under the influence"</dmn:text>
         </dmn:inputValues>
       </dmn:input>
       <dmn:input id="_913733E6-34D8-462E-83B1-2D329FE94D34">
@@ -140,7 +140,7 @@
       </dmn:rule>
       <dmn:rule id="_1E4D66EA-6B15-4A77-8301-A148A66CD905">
         <dmn:inputEntry id="_B095B0D9-B3CE-4E92-95CB-37A5787A52C8">
-          <dmn:text>"as"</dmn:text>
+          <dmn:text>"driving under the influence"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_2E4BB43E-DCE9-495B-B52A-5C1A5828A161">
           <dmn:text>-</dmn:text>
