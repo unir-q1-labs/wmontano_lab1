@@ -90,6 +90,9 @@
         <dmn:inputExpression id="_D0E6FFAE-61CA-411C-AE9D-2E5CDF731098" typeRef="number">
           <dmn:text>Violation.Actual Speed - Violation.Speed Limit</dmn:text>
         </dmn:inputExpression>
+        <dmn:inputValues kie:constraintType="range" id="_F5196B11-DD79-4B9B-819B-A033E82A3D99">
+          <dmn:text>[0..10000]</dmn:text>
+        </dmn:inputValues>
       </dmn:input>
       <dmn:output id="_9C1CA4E2-0662-435C-8FCA-500D40714BAC" name="Amount" typeRef="number"/>
       <dmn:output id="_5D221582-4471-42D7-AD02-A58BC35DF13F" name="Points " typeRef="number"/>
