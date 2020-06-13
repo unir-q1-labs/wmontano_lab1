@@ -65,8 +65,8 @@
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
-        <dmn:literalExpression id="_D8E6E1C7-D704-4133-BCBE-D7CD057FCE47">
-          <dmn:text>if Total Points >= 20 then "Yes" else "No"</dmn:text>
+        <dmn:literalExpression id="_664A9EB1-6EEA-4381-87D8-FEB4448F2661">
+          <dmn:text>if Total Points >= 20 then "Yes" else "No".</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
@@ -168,7 +168,7 @@
           <kie:ComponentWidths dmnElementRef="_4ED51A21-F21E-4C66-B55E-29E63BBEADA6">
             <kie:width>488.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_D8E6E1C7-D704-4133-BCBE-D7CD057FCE47">
+          <kie:ComponentWidths dmnElementRef="_664A9EB1-6EEA-4381-87D8-FEB4448F2661">
             <kie:width>488.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D2B59B11-A220-4A69-861A-77269A6E1398">
